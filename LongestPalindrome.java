@@ -1,1 +1,0 @@
-class LongestPalindrome{static String lp(String s){String r="";for(int i=0;i<s.length();i++)for(int j=i;j<s.length();j++){String sub=s.substring(i,j+1);if(new StringBuilder(sub).reverse().toString().equals(sub)&&sub.length()>r.length())r=sub;}return r;}public static void main(String[]a){System.out.println(lp("babad"));}}
